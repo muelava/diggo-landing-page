@@ -7,6 +7,8 @@ import "animate.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Product from "./pages/Product/Product";
+import Solution from "./pages/Solution/Solution";
 AOS.init({
   once: true,
   duration: 1000,
@@ -17,6 +19,8 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layouts />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="produk" element={<Product />} />
+      <Route path="solusi" element={<Solution />} />
     </Route>
   )
 );

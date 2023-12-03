@@ -1,48 +1,60 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import backgroundJumbotron from "../../assets/images/background-jumbotron.png";
 import hero from "../../assets/images/hero.png";
 import "./Home.scss";
 
 import { TertiaryButton } from "../../components/Button/Button";
 import BeforeFooter from "../../components/BeforeFooter/BeforeFooter";
-import Footer from "../../components/Footer/Footer";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+
+// image
+import backgroundJumbotron from "../../assets/images/background-jumbotron.png";
+import featuredFashion from "../../assets/images/featured-fashion.png";
+import featuredTokoRetail from "../../assets/images/featured-toko-retail.png";
+import featuredAutocare from "../../assets/images/featured-autocare.png";
+import featuredLaundry from "../../assets/images/featured-laundry.png";
+import featuredFoodAndBeverage from "../../assets/images/featured-food-and-beverage.png";
+import featuredOnlineShop from "../../assets/images/featured-online-shop.png";
+import featuredBarbershop from "../../assets/images/featured-barbershop.png";
+import featuredAllServices from "../../assets/images/featured-all-services.png";
+import values1 from "../../assets/images/values-1.svg";
+import values2 from "../../assets/images/values-2.svg";
+import values3 from "../../assets/images/values-3.svg";
 
 export default function Home() {
   let dataRetail = [
     {
       name: "Fashion",
-      image: "../../src/assets/images/featured-fashion.png",
+      image: featuredFashion,
     },
     {
       name: "Toko Retail",
-      image: "../../src/assets/images/featured-toko-retail.png",
+      image: featuredTokoRetail,
     },
     {
       name: "Autocare",
-      image: "../../src/assets/images/featured-autocare.png",
+      image: featuredAutocare,
     },
     {
       name: "Laundry",
-      image: "../../src/assets/images/featured-laundry.png",
+      image: featuredLaundry,
     },
     {
       name: "Food & Beverage",
-      image: "../../src/assets/images/featured-food-and-beverage.png",
+      image: featuredFoodAndBeverage,
     },
     {
       name: "Online Shop",
-      image: "../../src/assets/images/featured-online-shop.png",
+      image: featuredOnlineShop,
     },
     {
       name: "Barbershop",
-      image: "../../src/assets/images/featured-barbershop.png",
+      image: featuredBarbershop,
     },
     {
       name: "Berbagai Layanan",
-      image: "../../src/assets/images/featured-all-services.png",
+      image: featuredAllServices,
     },
   ];
 
@@ -75,7 +87,7 @@ export default function Home() {
 
           {/* all featured */}
           <section className="px-5 md:px-10 pt-20 featured">
-            <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-3">Apapun bisnismu pake diggo jadi lebih mudah</h3>
+            <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-3">Apapun bisnismu pakai Diggo jadi lebih mudah</h3>
             <p className="leading-normal text-sm md:text-base text-center mb-10">Ragam fitur dapat mendukung berbagi jenis bisnismu</p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5" data-aos="fade-in">
               {dataRetail.map((item, i) => {
@@ -94,18 +106,18 @@ export default function Home() {
           <section className="px-5 md:px-10 mt-20 pt-20 pb-10 values">
             <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-10 lg:w-3/4 lg:mx-auto">Kelola Bisnis UMKM dengan aplikasi yang tepat kelola usaha jadi mudah dan murah</h3>
             <div className="grid grid-cols-1 lg:grid-cols-8 py-3 text-xs md:text-base">
-              <div className="shadow-lg m-3 py-10 md:py-20 rounded-3xl px-5 lg:col-start-2 col-span-2" data-aos="fade-in" data-aos-delay="50">
-                <img src="../../src/assets/images/values-1.svg" className="w-20 object-contain mx-auto mb-10" alt="" />
+              <div className="shadow-lg m-3 py-10 md:py-20 rounded-3xl px-5 lg:col-start-2 col-span-2" data-aos="zoom-in" data-aos-delay="50">
+                <img src={values1} className="w-20 object-contain mx-auto mb-10" alt="Satu Aplikasi Lengkap" />
                 <h4 className="text-center font-bold mb-3 text-xl">Satu Aplikasi Lengkap</h4>
                 <p className="text-center">Berbagai solusi untuk mengelola berbagai bisnis Anda</p>
               </div>
-              <div className="shadow-lg m-3 py-10 md:py-20 rounded-3xl px-5 col-span-2" data-aos="fade-in" data-aos-delay="100">
-                <img src="../../src/assets/images/values-2.svg" className="w-20 object-contain mx-auto mb-10" alt="" />
+              <div className="shadow-lg m-3 py-10 md:py-20 rounded-3xl px-5 col-span-2" data-aos="zoom-in" data-aos-delay="150">
+                <img src={values2} className="w-20 object-contain mx-auto mb-10" alt="Hai! Diggo 24 Jam" />
                 <h4 className="text-center font-bold mb-3 text-xl">Hai! Diggo 24 Jam</h4>
                 <p className="text-center">Bantuan untuk bisnismu di setiap waktu dengan layanan Hai! DIGGO</p>
               </div>
-              <div className="shadow-lg m-3 py-10 md:py-20 rounded-3xl px-5 col-span-2" data-aos="fade-in" data-aos-delay="150">
-                <img src="../../src/assets/images/values-3.svg" className="w-20 object-contain mx-auto mb-10" alt="" />
+              <div className="shadow-lg m-3 py-10 md:py-20 rounded-3xl px-5 col-span-2" data-aos="zoom-in" data-aos-delay="300">
+                <img src={values3} className="w-20 object-contain mx-auto mb-10" alt="Pilihan Utama Segala Usaha" />
                 <h4 className="text-center font-bold mb-3 text-xl">Pilihan Utama Segala Usaha</h4>
                 <p className="text-center">DIGGO bersama ribuan UMKM Indonesia</p>
               </div>
@@ -114,9 +126,6 @@ export default function Home() {
 
           {/* before footer */}
           <BeforeFooter />
-
-          {/* footer */}
-          <Footer />
         </main>
       </>
     </HelmetProvider>

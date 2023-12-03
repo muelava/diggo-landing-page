@@ -21,8 +21,13 @@ function TertiaryButton(props) {
 function OutlineButton(props) {
   return (
     <>
-      <a href={props.link} className={`btn ${props.sizeButton ? props.sizeButton : "btn-sm"} border-white text-white bg-transparent px-5 py-1.5 rounded-full font-semibold capitalize hover:opacity-90 hover:bg-white hover:border-primary hover:text-primary transition-all duration-300`}>
-        {props.textButton}
+      <a
+        href={props.link}
+        className={`btn ${props.sizeButton ? props.sizeButton : "btn-sm"} ${
+          props.colorButton ? props.colorButton : "border-white text-white"
+        } bg-transparent px-5 py-1.5 rounded-full font-semibold hover:opacity-90 hover:bg-white hover:border-primary hover:text-primary transition-all duration-300 normal-case`}
+      >
+        {props.textButton} {props.iconButton}
       </a>
     </>
   );
