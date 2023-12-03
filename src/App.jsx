@@ -5,10 +5,16 @@ import About from "./pages/About/About";
 import "./assets/fontawesome/css/all.css";
 import "animate.css";
 
+import "swiper/css";
+import "swiper/css/navigation";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Product from "./pages/Product/Product";
 import Solution from "./pages/Solution/Solution";
+import Package from "./pages/package/Package";
+import Service from "./pages/Service/Service";
+import Price from "./pages/Price/Price";
 AOS.init({
   once: true,
   duration: 1000,
@@ -21,6 +27,9 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="produk" element={<Product />} />
       <Route path="solusi" element={<Solution />} />
+      <Route path="layanan" element={<Service />} />
+      <Route path="harga" element={<Price />} />
+      <Route path="paket" element={<Package />} />
     </Route>
   )
 );

@@ -33,16 +33,16 @@ const Navbar = () => {
                 <NavLink to="produk" className={({ isActive }) => (isActive ? "text-primary" : "link") + ` link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5 `}>
                   Produk
                 </NavLink>
-                <NavLink to="#" className="link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5">
+                <NavLink to="layanan" className={({ isActive }) => (isActive ? "text-primary" : "link") + ` link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5`}>
                   Layanan
                 </NavLink>
                 <NavLink to="solusi" className={({ isActive }) => (isActive ? "text-primary" : "link") + ` link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5 `}>
                   Solusi
                 </NavLink>
-                <NavLink to="#" className="link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5">
+                <NavLink to="harga" className={({ isActive }) => (isActive ? "text-primary" : "link") + ` link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5`}>
                   Harga
                 </NavLink>
-                <NavLink to="#" className="link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5">
+                <NavLink to="paket" className={({ isActive }) => (isActive ? "text-primary" : "link") + ` link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5`}>
                   Paket
                 </NavLink>
                 <NavLink to="#" className="link no-underline hover:opacity-90 hover:text-primary hover:bg-sky-50 hover:rounded-full hover:bg-opacity-70 transition-all duration-200 px-5 py-2.5">
