@@ -15,6 +15,9 @@ import Solution from "./pages/Solution/Solution";
 import Package from "./pages/package/Package";
 import Service from "./pages/Service/Service";
 import Price from "./pages/Price/Price";
+import Faq from "./pages/Faq/Faq";
+import ErrorPage from "./pages/404/404";
+
 AOS.init({
   once: true,
   duration: 1000,
@@ -30,6 +33,8 @@ const router = createBrowserRouter(
       <Route path="layanan" element={<Service />} />
       <Route path="harga" element={<Price />} />
       <Route path="paket" element={<Package />} />
+      <Route path="faq" element={<Faq />} />
+      <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 );

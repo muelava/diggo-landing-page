@@ -1,0 +1,9 @@
+@import url("../../guideline.scss");
+
+.tab_btn {
+  &.active {
+    border-color: #466cf1;
+    background-color: transparent;
+    color: #466cf1;
+  }
+}

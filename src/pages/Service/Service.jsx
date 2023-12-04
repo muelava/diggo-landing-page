@@ -62,7 +62,7 @@ export default function Service() {
     <HelmetProvider>
       <>
         <Helmet>
-          <title>Diggo | Aplikasi Kasir Indonesia</title>
+          <title>Diggo - Layanan</title>
         </Helmet>
         <main>
           {/* all featured */}

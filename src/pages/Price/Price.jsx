@@ -22,12 +22,12 @@ const Price = () => {
     },
   ];
 
-  let [showDetail, setShowDetail] = useState([false, "Buka Detail Paket"]);
+  let [showDetail, setShowDetail] = useState([false, "Lihat Detail Paket"]);
   const toggleDetail = () => {
     if (showDetail[0] === false) {
       setShowDetail([true, "Tutup Detail Paket"]);
     } else {
-      setShowDetail([false, "Buka Paket"]);
+      setShowDetail([false, "Lihat Detail Paket"]);
     }
   };
 
@@ -35,7 +35,7 @@ const Price = () => {
     <HelmetProvider>
       <>
         <Helmet>
-          <title>Diggo - Paket</title>
+          <title>Diggo - Harga</title>
         </Helmet>
         <main>
           {/* contain */}
@@ -78,7 +78,7 @@ const Price = () => {
                       <p className="font-semibold text-center text-sm mb-5">Per Outlet</p>
                       <hr className="mb-3" />
 
-                      <ul className={showDetail[0] ? "" : "hidden" + ` mb-5 text-sm animate__animated animate__fadeInRight`}>
+                      <ul className={(showDetail[0] ? "" : "hidden") + ` mb-5 text-xs animate__animated animate__fadeIn`}>
                         <li className="mb-2">
                           <i className="fa-solid fa-circle-check text-primary"></i> Multi Outlet
                         </li>
