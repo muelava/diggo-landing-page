@@ -51,7 +51,7 @@ const Faq = () => {
                     <p>hello</p>
                   </div>
                 </div>
-                <div className="collapse collapse-arrowmb-3">
+                <div className="collapse collapse-arrow mb-3">
                   <input type="radio" name="my-accordion-2" />
                   <div className="collapse-title text-base font-semibold">Bagaimana cara mengatur akun saya?</div>
                   <div className="collapse-content text-sm">

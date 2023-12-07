@@ -50,8 +50,7 @@ const Package = () => {
                 },
               }}
               scrollbar={{ draggable: true }}
-              onSlideChange={() => console.log("slide change")}
-              className="py-20 lg:max-w-7xl"
+              className="py-20 lg:max-w-7xl package-slider"
             >
               {dataDummy.map((item, i) => {
                 return (
