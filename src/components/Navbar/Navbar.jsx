@@ -56,8 +56,8 @@ const Navbar = () => {
                 </NavLink>
               </div>
               <div className="flex gap-3 ms-auto list-button">
-                <TertiaryButton textButton={"Masuk"} link="#masuk" />
-                <PrimaryButton textButton={"Coba Gratis"} link="#daftar" />
+                <TertiaryButton textButton={"Masuk"} link="https://dashboard.diggo.id/login" />
+                <PrimaryButton textButton={"Coba Gratis"} link="https://dashboard.diggo.id/register" />
               </div>
             </div>
             <button className="block lg:hidden btn btn-sm ms-auto bg-transparent z-50 text-black" onClick={() => toggleMenu()}>
