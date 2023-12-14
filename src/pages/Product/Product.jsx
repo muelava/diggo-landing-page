@@ -13,7 +13,7 @@ const Product = () => {
           <HeadResource />
 
           {/* contain */}
-          <section className="px-5 md:px-10 pt-20 lg:flex gap-5">
+          <section className="px-5 pt-20 lg:flex gap-5 max-w-screen-xl mx-auto">
             <div className="lg:w-96 lg:p-10 rounded-xl shadow">
               <p className="mb-3 text-primary">Fitur Aplikasi</p>
               <hr className="mb-5" />

@@ -14,7 +14,7 @@ const Solution = () => {
           <HeadResource />
 
           {/* contain */}
-          <section className="px-5 md:px-10 pt-20 gap-5 bg-primary-50">
+          <section className="px-3 pt-20 gap-5 bg-primary-50 max-w-screen-xl mx-auto">
             <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-10 lg:w-3/4 lg:mx-auto">Solusi Berbagai Jenis Bisnis</h3>
 
             <div className="p-5 lg:max-w-5xl mx-auto md:p-10 bg-white shadow rounded-3xl flex flex-col lg:flex-row gap-5 lg:gap-10 mb-5">

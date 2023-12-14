@@ -25,10 +25,12 @@ const Faq = () => {
         </Helmet>
         <main>
           {/* contain */}
-          <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-3 lg:w-3/4 lg:mx-auto pt-40">Frequently Asked Question</h3>
-          <p className="text-center mb-10 opacity-80">Kumpulan pertanyaan yang sering diajukan beserta jawabannya, membantu pengguna memahami topik dengan lebih baik.</p>
-          <hr />
-          <section className="px-5 md:px-10 pt-20 lg:flex gap-5 mb-10">
+          <div className="max-w-screen-xl mx-auto">
+            <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-3 lg:w-3/4 lg:mx-auto pt-40">Frequently Asked Question</h3>
+            <p className="text-center mb-10 opacity-80">Kumpulan pertanyaan yang sering diajukan beserta jawabannya, membantu pengguna memahami topik dengan lebih baik.</p>
+            <hr />
+          </div>
+          <section className="px-5 pt-20 lg:flex gap-5 mb-10 max-w-screen-xl mx-auto">
             <div className="lg:w-96 lg:p-10 rounded-xl shadow">
               <button onClick={handleTab} data-target="#tab_1" className="tab_btn active btn w-full mb-3 hover:bg-transparent hover:border-primary hover:opacity-90 font-bold normal-case">
                 <i className="fa-solid fa-bookmark"></i> Pertanyaan Umum

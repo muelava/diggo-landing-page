@@ -25,9 +25,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-40 bg-white">
+      <nav className="fixed top-0 w-full z-40 bg-white shadow">
         <Hotline />
-        <div className="py-4 px-3 md:px-10 flex justify-between items-center gap-3 text-sm shadow">
+        <div className="py-4 px-3 flex justify-between items-center gap-3 text-sm max-w-screen-xl mx-auto">
           <div className="basis-1/4 z-50">
             <a href="./" className="inline-block">
               <img src={logoBrand} className="w-24" />

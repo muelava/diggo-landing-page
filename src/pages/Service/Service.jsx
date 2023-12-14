@@ -1,15 +1,12 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import hero from "../../assets/images/hero.png";
 import "./Service.scss";
 
-import { TertiaryButton } from "../../components/Button/Button";
 import BeforeFooter from "../../components/BeforeFooter/BeforeFooter";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 // image
-import backgroundJumbotron from "../../assets/images/background-jumbotron.png";
 import featuredFashion from "../../assets/images/featured-fashion.png";
 import featuredTokoRetail from "../../assets/images/featured-toko-retail.png";
 import featuredAutocare from "../../assets/images/featured-autocare.png";
@@ -18,9 +15,6 @@ import featuredFoodAndBeverage from "../../assets/images/featured-food-and-bever
 import featuredOnlineShop from "../../assets/images/featured-online-shop.png";
 import featuredBarbershop from "../../assets/images/featured-barbershop.png";
 import featuredAllServices from "../../assets/images/featured-all-services.png";
-import values1 from "../../assets/images/values-1.svg";
-import values2 from "../../assets/images/values-2.svg";
-import values3 from "../../assets/images/values-3.svg";
 
 export default function Service() {
   let dataRetail = [
@@ -66,7 +60,7 @@ export default function Service() {
         </Helmet>
         <main>
           {/* all featured */}
-          <section className="px-5 md:px-10 pt-40 mb-20 featured">
+          <section className="px-3 pt-40 mb-20 featured max-w-screen-xl mx-auto">
             <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-3">Apapun bisnismu pakai Diggo jadi lebih mudah</h3>
             <p className="leading-normal text-sm md:text-base text-center mb-10">Ragam fitur dapat mendukung berbagi jenis bisnismu</p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5" data-aos="fade-in">

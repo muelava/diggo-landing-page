@@ -28,15 +28,17 @@ const Details = () => {
         {result ? (
           <main>
             {/* breadcrumb */}
-            <div className="text-xs mb-8 flex items-center gap-2 pt-32 mx-5 md:mx-10 ">
-              <Link to="/solusi" className="hover:text-primary">
-                Solusi
-              </Link>
-              <i className="fa-solid fa-chevron-right fa-xs opacity-60"></i> <b className="text-primary">{title}</b>
+            <div className="max-w-screen-xl mx-auto">
+              <div className="text-xs mb-8 flex items-center gap-2 pt-32 mx-5">
+                <Link to="/solusi" className="hover:text-primary">
+                  Solusi
+                </Link>
+                <i className="fa-solid fa-chevron-right fa-xs opacity-60"></i> <b className="text-primary">{title}</b>
+              </div>
             </div>
 
             {/* contain */}
-            <section className="px-5 md:px-10 pb-20 flex flex-col md:flex-row items-center gap-5 lg:gap-10">
+            <section className="px-5 pb-20 flex flex-col md:flex-row items-center gap-5 lg:gap-10 max-w-screen-xl mx-auto">
               <div className="lg:w-1/2">
                 <p className="font-bold text-xl text-primary">{title}</p>
                 <h4 className="font-bold text-3xl lg:text-5xl" style={{ lineHeight: "1.5" }}>
@@ -67,7 +69,7 @@ const Details = () => {
               <img src={heroDetail} className="w-72 lg:w-2/5 object-contain" alt="" data-aos="flip-left" />
             </section>
 
-            <section className="px-5 md:px-10 mb-20">
+            <section className="px-3 mb-20 max-w-screen-xl mx-auto">
               <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-10">Ragam Berbagai Kelebihan</h3>
 
               <div className="flex flex-col lg:flex-row justify-center items-center gap-20">

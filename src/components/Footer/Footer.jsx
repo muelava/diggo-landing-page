@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="footer p-10 grid-flow-row md:grid-cols-4 lg:grid-cols-5 md:gap-10">
+      <footer className="footer p-10 px-3 grid-flow-row md:grid-cols-4 lg:grid-cols-5 md:gap-10 max-w-screen-xl mx-auto">
         <aside className="col-span-2 lg:col-span-1">
           <img src={logoBrand} alt="Diggo" className="lg:w-40" />
           <p>

@@ -29,7 +29,7 @@ const Package = () => {
         </Helmet>
         <main>
           {/* contain */}
-          <section className="px-5 md:px-10 gap-5 bg-primary-50 pt-40">
+          <section className="px-3 gap-5 bg-primary-50 pt-40 max-w-screen-xl mx-auto">
             <h3 className="font-bold text-xl md:text-3xl leading-normal text-center mb-3 lg:w-3/4 lg:mx-auto">Paket Langganan</h3>
             <p className="text-center mb-10 opacity-80">Diggo Menghadirkan Pengalaman Berlangganan yang Luar Biasa dengan Paket Langganan Inovatifnya</p>
             <hr />
