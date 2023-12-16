@@ -8,20 +8,9 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { PrimaryButton, TertiaryButton } from "../../components/Button/Button";
 import { useState } from "react";
+import dataPrice from "../../../public/json/package-data.json";
 
 const Price = () => {
-  let dataDummy = [
-    {
-      id: 1,
-    },
-    {
-      id: 2,
-    },
-    {
-      id: 3,
-    },
-  ];
-
   let [showDetail, setShowDetail] = useState([false, "Lihat Detail Paket"]);
   const toggleDetail = () => {
     if (showDetail[0] === false) {
@@ -62,40 +51,51 @@ const Price = () => {
                 scrollbar={{ draggable: true }}
                 className="pt-20 pb-5 lg:max-w-7xl price-slider"
               >
-                {dataDummy.map((item, i) => {
-                  return (
-                    <SwiperSlide key={i} className="shadow p-4 rounded-2xl">
-                      <div>
-                        <p className="text-center">
-                          <b className="text-primary">Recommended</b> <small className="text-rose-400 bg-rose-100 px-1 py-0.5 rounded-lg font-semibold">Hemat 20%</small>
-                        </p>
-                        <h3 className="font-bold lg:text-xl mb-3 text-center">Paket 1 Tahun</h3>
-                        <p className="text-center mb-3">Paket Langganan untuk usaha skala besar yang membutuhkan fitur otomasi.</p>
-                        <p className="font-semibold text-center mb-3">Pembayaran 1 Tahun</p>
-                        <div className="text-center mb-1">
-                          <h3 className="font-bold text-2xl inline-block text-primary">Rp1,000</h3>
-                          <small className="text-xs">/hari</small>
-                        </div>
-                        <p className="font-semibold text-center text-sm mb-5">Per Outlet</p>
-                        <hr className="mb-3" />
-
-                        <ul className={(showDetail[0] ? "" : "hidden") + ` mb-5 text-xs animate__animated animate__fadeIn`}>
-                          <li className="mb-2">
-                            <i className="fa-solid fa-circle-check text-primary"></i> Multi Outlet
-                          </li>
-                          <li className="mb-2">+ Multi Device</li>
-                          <li className="mb-2">
+                {dataPrice
+                  .map((item, i) => {
+                    return (
+                      <SwiperSlide key={i} className="shadow p-4 rounded-2xl">
+                        <div>
+                          <p className="text-center">
+                            <b className="text-primary">{item.name}</b> <small className="text-rose-400 bg-rose-100 px-1 py-0.5 rounded-lg font-semibold">Hemat {item.discount}</small>
+                          </p>
+                          <h3 className="font-bold lg:text-xl mb-3 text-center">Paket {item.period}</h3>
+                          <p className="text-center mb-3">{item.description}</p>
+                          <p className="font-semibold text-center mb-3">Pembayaran {item.period}</p>
+                          <div className="text-center mb-1">
+                            <h3 className="font-bold text-2xl inline-block text-primary">Rp{item.price.toLocaleString("id", "ID")}</h3>
+                            <small className="text-xs">/hari</small>
+                          </div>
+                          <p className="font-semibold text-center text-sm mb-5">Per Outlet</p>
+                          <hr className="mb-3" />
+                          <ul className={(showDetail[0] ? "" : "hidden") + ` mb-5 text-xs animate__animated animate__fadeIn`}>
+                            {item.details.map((subItem, i) => {
+                              return (
+                                <li className="mb-2" key={i}>
+                                  <i className="fa-solid fa-circle-check text-primary mb-2"></i> {subItem.cat}
+                                  {subItem.list.map((listItem, i) => {
+                                    return (
+                                      <ul key={i}>
+                                        <li className="mb-2 ms-2">+ {listItem}</li>
+                                      </ul>
+                                    );
+                                  })}
+                                </li>
+                              );
+                            })}
+                            {/* <li className="mb-2">
                             <i className="fa-solid fa-circle-check text-primary"></i> Tablet + Langganan 1 tahun
                           </li>
-                          <li className="mb-2">+ Komisi +SplitBill +Struk Digital (WA)</li>
-                        </ul>
-                        <div className="grid grid-cols-1">
-                          <PrimaryButton textButton="Pilih Paket" sizeButton="md" />
+                          <li className="mb-2">+ Komisi +SplitBill +Struk Digital (WA)</li> */}
+                          </ul>
+                          <div className="grid grid-cols-1">
+                            <PrimaryButton textButton="Pilih Paket" sizeButton="md" link="https://dashboard.diggo.id/login" />
+                          </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                  );
-                })}
+                      </SwiperSlide>
+                    );
+                  })
+                  .reverse()}
               </Swiper>
 
               <div className="grid grid-cols-1 pb-20" onClick={() => toggleDetail()}>

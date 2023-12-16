@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "name": "Pemula",
+    "period": "1 Bulan",
+    "price": 3000,
+    "discount": "20%",
+    "description": "Paket langganan untuk usaha kecil atau yang baru memulai sistem kasir digital",
+    "details": [
+      {
+        "cat": "Multi Outlet",
+        "list": ["Multi Device"]
+      },
+      {
+        "cat": "Aplikasi Kasir Online PoS (Atur Meja, Jasa, Pengiriman)",
+        "list": ["Komisi +SplitBill +Struk Digital (WA)"]
+      },
+      {
+        "cat": "Manajemen Inventory",
+        "list": ["Pencatan Supplier", "Purchase Order", "Penerimaan Barang", "COGS average", "Stok Opname"]
+      },
+      {
+        "cat": "Manajemen Pelanggan dan Promo",
+        "list": ["Multiple Price", "Diskon", "Komplemen", "Manajemen Karyawan", "Komisi", "Laporan Penjualan Karyawan"]
+      },
+      {
+        "cat": "Akuntansi Lengkap",
+        "list": ["Auto Posting", "Laporan Keuangan Lengkap", "CoA", "Buku Kas", "Penerimaan", "Pengeluaran", "Laporan Neraca", "Laporan Laba Rugi", "Laporan Buku Besar", "Laporan Arus Kas", "Laporan Jurnal", "Laporan Hutang", "Laporan Piutang"]
+      },
+      {
+        "cat": "Laporan Lengkap",
+        "list": ["Ringkasan Penjualan", "Laporan Penjualan Detail", "Laporan Jasa", "Laporan Promo", "Laporan Pajak", "Laporan Kasir", "Laporan Pelanggan", "Laporan Karyawan"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Lanjutan",
+    "period": "3 Bulan",
+    "price": 2000,
+    "discount": "33%",
+    "description": "Paket langganan untuk usaha berkembang yang butuh fitur tambahan lebih lengkap.",
+    "details": [
+      {
+        "cat": "Multi Outlet",
+        "list": ["Multi Device"]
+      },
+      {
+        "cat": "Aplikasi Kasir Online PoS (Atur Meja, Jasa, Pengiriman)",
+        "list": ["Komisi +SplitBill +Struk Digital (WA)", "Manajemen Inventory", "Pencatan Supplier", "Purchase Order", "Penerimaan Barang", "COGS average", "Stok Opname"]
+      },
+      {
+        "cat": "Manajemen Pelanggan dan Promo",
+        "list": ["Multiple Price", "Diskon", "Komplemen", "Manajemen Karyawan", "Komisi", "Laporan Penjualan Karyawan"]
+      },
+      {
+        "cat": "Akuntansi Lengkap",
+        "list": ["Auto Posting", "Laporan Keuangan Lengkap", "CoA", "Buku Kas", "Penerimaan", "Pengeluaran", "Laporan Neraca", "Laporan Laba Rugi", "Laporan Buku Besar", "Laporan Arus Kas", "Laporan Jurnal", "Laporan Hutang", "Laporan Piutang"]
+      },
+      {
+        "cat": "Laporan Lengkap",
+        "list": ["Ringkasan Penjualan", "Laporan Penjualan Detail", "Laporan Jasa", "Laporan Promo", "Laporan Pajak", "Laporan Kasir", "Laporan Pelanggan", "Laporan Karyawan"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Favorite",
+    "period": "6 Bulan",
+    "price": 1500,
+    "discount": "100%",
+    "description": "Paket langganan untuk usaha skala besar yang membutuhkan fitur otomasi.",
+    "details": [
+      {
+        "cat": "Multi Outlet",
+        "list": ["Multi Device"]
+      },
+      {
+        "cat": "Aplikasi Kasir Online PoS (Atur Meja, Jasa, Pengiriman)",
+        "list": ["Komisi +SplitBill +Struk Digital (WA)", "Manajemen Inventory", "Pencatan Supplier", "Purchase Order", "Penerimaan Barang", "COGS average", "Stok Opname"]
+      },
+      {
+        "cat": "Manajemen Pelanggan dan Promo",
+        "list": ["Multiple Price", "Diskon", "Komplemen", "Manajemen Karyawan", "Komisi", "Laporan Penjualan Karyawan"]
+      },
+      {
+        "cat": "Akuntansi Lengkap",
+        "list": ["Auto Posting", "Laporan Keuangan Lengkap", "CoA", "Buku Kas", "Penerimaan", "Pengeluaran", "Laporan Neraca", "Laporan Laba Rugi", "Laporan Buku Besar", "Laporan Arus Kas", "Laporan Jurnal", "Laporan Hutang", "Laporan Piutang"]
+      },
+      {
+        "cat": "Laporan Lengkap",
+        "list": ["Ringkasan Penjualan", "Laporan Penjualan Detail", "Laporan Jasa", "Laporan Promo", "Laporan Pajak", "Laporan Kasir", "Laporan Pelanggan", "Laporan Karyawan"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Recommended",
+    "period": "12 Bulan",
+    "price": 1000,
+    "discount": "200%",
+    "description": "Paket langganan untuk usaha skala besar yang membutuhkan fitur otomasi.",
+    "details": [
+      {
+        "cat": "Multi Outlet",
+        "list": ["Multi Device"]
+      },
+      {
+        "cat": "Aplikasi Kasir Online PoS (Atur Meja, Jasa, Pengiriman)",
+        "list": ["Komisi +SplitBill +Struk Digital (WA)", "Manajemen Inventory", "Pencatan Supplier", "Purchase Order", "Penerimaan Barang", "COGS average", "Stok Opname"]
+      },
+      {
+        "cat": "Manajemen Pelanggan dan Promo",
+        "list": ["Multiple Price", "Diskon", "Komplemen", "Manajemen Karyawan", "Komisi", "Laporan Penjualan Karyawan"]
+      },
+      {
+        "cat": "Akuntansi Lengkap",
+        "list": ["Auto Posting", "Laporan Keuangan Lengkap", "CoA", "Buku Kas", "Penerimaan", "Pengeluaran", "Laporan Neraca", "Laporan Laba Rugi", "Laporan Buku Besar", "Laporan Arus Kas", "Laporan Jurnal", "Laporan Hutang", "Laporan Piutang"]
+      },
+      {
+        "cat": "Laporan Lengkap",
+        "list": ["Ringkasan Penjualan", "Laporan Penjualan Detail", "Laporan Jasa", "Laporan Promo", "Laporan Pajak", "Laporan Kasir", "Laporan Pelanggan", "Laporan Karyawan"]
+      }
+    ]
+  }
+]
